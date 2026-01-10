@@ -56,6 +56,7 @@ class Board
     return is_victory || is_tie
   end
 
+  # I did think about storing it as an array... but nah, this is less space complexity~
   def is_victory()
     if @filled_positions[0] != nil && @filled_positions[0] == @filled_positions[1] &&  @filled_positions[0] == @filled_positions[2]
       return true
