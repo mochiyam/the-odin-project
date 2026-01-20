@@ -361,3 +361,23 @@ end
 a = [1, 2, 3]
 a.my_find { |n| n == 2 }
 #=> 2
+
+# #=======================================================================================
+# # Randommmm~
+#
+val1 = true and false # (val1 = true) and false
+val2 = true && false  # val2 = (true && false)
+# puts val1, val2
+
+# In Ruby, only values that evaluate to FALSE is, false and nil
+p true    ? "true" : "false"
+p false   ? "true" : "false"
+p nil     ? "true" : "false"
+p 1       ? "true" : "false"
+p 0       ? "true" : "false"
+p "false" ? "true" : "false"
+p ""      ? "true" : "false"
+p []      ? "true" : "false"
+
+test = { abc: 'hello', 'another_key' => 123, 4567 => 'third' }
+p test.keys.map(&:to_s).sort_by(&:length)
